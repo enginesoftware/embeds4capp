@@ -13,7 +13,7 @@ const props = defineProps({
     </Head>
     <div class="w-full sm:px-0">
         <TabGroup>
-            <TabList class="flex space-x-1 bg-gray-900">
+            <TabList class="flex space-x-1 bg-black/80">
                 <Tab
                     v-for="category in Object.keys(apps)"
                     as="template"
@@ -22,10 +22,10 @@ const props = defineProps({
                 >
                     <button
                         :class="[
-              'w-full py-2.5 text-sm font-medium leading-5 text-white',
+              'w-full py-2 text-sm font-medium leading-5 text-white focus:ring-transparent',
               selected
-                ? 'bg-white shadow text-gray-900'
-                : 'text-white hover:bg-white/[0.12] hover:text-white',
+                ? 'bg-black/90'
+                : '',
             ]"
                     >
                         {{ category }}
