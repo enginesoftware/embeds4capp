@@ -37,7 +37,6 @@ const props = defineProps({
                 <TabPanel
                     v-for="(posts, idx) in Object.values(apps)"
                     :key="idx"
-                    static
                     class="h-screen"
                 >
                     <iframe v-for="post in posts" height="100%" width="100%" allowfullscreen :src="post.link" />
