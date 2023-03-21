@@ -13,7 +13,7 @@ const props = defineProps({
         <title>Embed</title>
     </Head>
     <div class="grid grid-cols-3 p-5 gap-4">
-        <application-card v-for="app in apps" :app="app" />
+        <application-card class="h-72" v-for="app in apps" :app="app" />
     </div>
 <!--    <div class="w-full sm:px-0">-->
 <!--        <TabGroup>-->
