@@ -16,7 +16,7 @@ class EmbedAppController extends Controller
         $apps = EmbedApp::all();
 
         return Inertia::render('Embed', [
-            'apps' => $apps->groupBy('name')
+            'apps' => $apps
         ]);
     }
 
