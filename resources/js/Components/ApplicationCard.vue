@@ -4,6 +4,7 @@ defineProps({
 })
 </script>
 <template>
+    <a :href="app.link" target="_blank">
     <div class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
 <!--        <img-->
 <!--            alt="Office"-->
@@ -18,12 +19,9 @@ defineProps({
 <!--            <time datetime="2022-10-10" class="block text-xs text-gray-500">-->
 <!--                10th Oct 2022-->
 <!--            </time>-->
-
-            <a :href="app.link" target="_blank">
                 <h3 class="mt-0.5 text-center text-2xl text-gray-900">
                     {{ app.name || 'Sistema Sem Nome' }}
                 </h3>
-            </a>
 
 <!--            <p class="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">-->
 <!--                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae-->
@@ -34,4 +32,5 @@ defineProps({
 <!--            </p>-->
         </div>
     </div>
+    </a>
 </template>
